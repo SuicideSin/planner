@@ -20,18 +20,18 @@ The following steps walk through getting the application running. For contributi
 
 ### Setting up a Ruby Environment
 
-You will need to install Ruby 2.3.3 using RVM or rbenv.
+You will need to install the Ruby version using RVM or rbenv.
 
 #### Using [rvm](https://rvm.io/rvm/install)
 
 ```bash
-rvm install 2.3.3
+rvm install
 ```
 
 #### Using [rbenv](https://github.com/sstephenson/rbenv) and [ruby-build](https://github.com/sstephenson/ruby-build)
 
 ```bash
-rbenv install 2.3.3
+rbenv install
 rbenv global 2.3.3
 ```
 
@@ -71,13 +71,13 @@ Create an application at [https://github.com/settings/applications/new](https://
 
 #### Add your application details to your environment
 
-Create a file named `.env` in the root of the application folder (`touch .env`) 
+Create a file named `.env` in the root of the application folder (`touch .env`)
 with the GitHub key and secret like so:
 
     GITHUB_KEY=YOUR_KEY
     GITHUB_SECRET=YOUR_SECRET
 
-*Note:* Windows doesn't like creating a file named `.env` so do the following 
+*Note:* Windows doesn't like creating a file named `.env` so do the following
 from a cmd prompt in your application folder:
 
     echo GITHUB_KEY=YOUR_KEY >> .env
